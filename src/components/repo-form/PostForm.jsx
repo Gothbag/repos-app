@@ -1,17 +1,17 @@
 import { useState } from "react";
 
-import "./PostForm.css";
+import "./RepoForm.css";
 import { Link } from "react-router-dom";
 
-export default function PostForm({
+export default function RepoForm({
   isEditMode,
   onSubmit,
-  post = {},
+  repo = {},
   primaryButtonText
 }) {
   const [formData, setFormData] = useState({
-    title: post.title || "",
-    body: post.body || ""
+    title: repo.title || "",
+    body: repo.body || ""
   });
 
   const onChangeInput = e =>
@@ -29,8 +29,8 @@ export default function PostForm({
   const isButtonDisabled = formData.body === "" || formData.body === "";
 
   return (
-    <div className="post-form">
-      <h6>Author: {post.author || "Admin"}</h6>
+    <div className="repo-form">
+      <h6>Author: {repo.author || "Admin"}</h6>
       <form>
         <h3>
           <input

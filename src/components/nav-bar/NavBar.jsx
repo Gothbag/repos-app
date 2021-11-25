@@ -16,7 +16,7 @@ export default function NavBar() {
       <li>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/post/new"
+          to="/repo/new"
         >
           New
         </NavLink>

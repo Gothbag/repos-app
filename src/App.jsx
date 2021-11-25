@@ -6,16 +6,16 @@ import "./App.css";
 
 import NavBar from "./components/nav-bar";
 import Home from "./containers/home";
-import { loadPosts, postsSelector } from "./redux/posts";
+import { loadRepos, reposSelector } from "./redux/repos";
 
 function App() {
   const dispatch = useDispatch();
 
-  const posts = useSelector(postsSelector);
+  const repos = useSelector(reposSelector);
 
   useEffect(() => {
-    if (posts.length === 0) {
-      dispatch(loadPosts());
+    if (repos.length === 0) {
+      dispatch(loadRepos());
     }
   }, []);
 
@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <NavBar />
       <header className="App-header">
-        <h2>Posts</h2>
+        <h2>Repos</h2>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="*" element={<div>404</div>} />

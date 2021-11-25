@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import { postsReducer } from "./posts";
+import { reposReducer } from "./repos";
 
 const configureAppStore = preloadedState => {
   const store = configureStore({
     reducer: {
-      posts: postsReducer
+      repos: reposReducer
     },
     middleware: getDefaultMiddleware => getDefaultMiddleware(),
     preloadedState

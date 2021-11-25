@@ -1,5 +1,5 @@
 export const state = {
-  posts: [
+  repos: [
     {
       id: 1,
       title: "Cidade de Deus"

@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
-import PostList from "../../components/post-list";
+import RepoList from "../../components/repo-list";
 
 import "./Home.css";
-import { postsSelector } from "../../redux/posts";
+import { reposSelector } from "../../redux/repos";
 
 export default function Home() {
-  const posts = useSelector(postsSelector);
+  const repos = useSelector(reposSelector);
 
   return (
-    <div className="posts-container">
-      <PostList posts={posts} />
+    <div className="repos-container">
+      <RepoList repos={repos} />
     </div>
   );
 }

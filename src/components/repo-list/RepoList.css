@@ -1,22 +1,22 @@
-table.post-list {
+table.repo-list {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
   font-size: 16px;
 }
 
-table.post-list th,
-table.post-list td {
+table.repo-list th,
+table.repo-list td {
   text-align: left;
   padding: 12px;
   border-color: blac;
 }
 
-table.post-list tr {
+table.repo-list tr {
   border-bottom: 1px solid #ddd;
 }
 
-table.post-list tr.header,
-table.post-list tr:hover {
+table.repo-list tr.header,
+table.repo-list tr:hover {
   background-color: #f1f1f1;
 }

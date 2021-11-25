@@ -1,8 +1,8 @@
-.posts-container {
+.repos-container {
   max-width: 600px;
 }
 
-.posts-container input {
+.repos-container input {
   float: left;
   width: 200px; /* Full-width */
   font-size: 16px; /* Increase font-size */
