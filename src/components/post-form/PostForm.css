@@ -1,0 +1,30 @@
+div.post-form input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div.post-form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+div.post-form label {
+  float: left;
+}
+
+div.post-form button {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 4px;
+}
