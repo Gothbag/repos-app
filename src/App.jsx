@@ -6,6 +6,7 @@ import "./App.css";
 
 import NavBar from "./components/nav-bar";
 import Home from "./containers/home";
+import RepoDetail from "./containers/repo-detail";
 import { loadRepos, reposSelector } from "./redux/repos";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <h2>Google Repos</h2>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/repo/:id" element={<RepoDetail />} />
           <Route path="*" element={<div>404</div>} />
         </Routes>
       </header>

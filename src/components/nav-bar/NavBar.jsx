@@ -13,14 +13,6 @@ export default function NavBar() {
           Home
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "")}
-          to="/repo/new"
-        >
-          New
-        </NavLink>
-      </li>
     </ul>
   );
 }
