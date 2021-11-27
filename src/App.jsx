@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <NavBar />
       <header className="App-header">
-        <h2>Repos</h2>
+        <h2>Google Repos</h2>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="*" element={<div>404</div>} />

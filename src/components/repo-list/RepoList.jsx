@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-import { SearchParams } from "../../constants";
-
 import "./RepoList.css";
 
 export default function RepoList({ repos }) {
