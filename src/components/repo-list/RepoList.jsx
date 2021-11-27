@@ -9,6 +9,7 @@ export default function RepoList({ repos }) {
         <tr>
           <th>Name</th>
           <th>Description</th>
+          <th>Creation date</th>
           <th></th>
         </tr>
       </thead>
@@ -17,6 +18,7 @@ export default function RepoList({ repos }) {
           <tr key={repo.id}>
             <td>{repo.name}</td>
             <td>{repo.description}</td>
+            <td>{repo.created_at}</td>
             <td>
               <Link to={`repo/${repo.id}`}>
                 <button>View</button>
