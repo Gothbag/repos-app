@@ -21,7 +21,9 @@ export default function Home() {
   };
 
   const filteredRepos = repos
-    .filter(repo => repo.name.toUpperCase().includes(filter.toUpperCase()))
+    .filter(repo =>
+      repo.name.toUpperCase().includes(filter.trim().toUpperCase())
+    )
     .sort(sortByDateDescending);
 
   return (
