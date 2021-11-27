@@ -28,8 +28,14 @@ export default function Home() {
 
   return (
     <div className="repos-container">
-      <input name="filter" id="name" value={filter} onChange={onChangeFilter} />
-      <label for="name">Filter by name</label>
+      <input
+        name="filter"
+        id="filter"
+        type="text"
+        value={filter}
+        onChange={onChangeFilter}
+      />
+      <label htmlFor="filter">Filter by name</label>
       <RepoList repos={filteredRepos} />
     </div>
   );

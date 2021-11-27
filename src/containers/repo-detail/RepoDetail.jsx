@@ -1,8 +1,9 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useParams, useNavigate } from "react-router-dom";
 
 import { repoByIdSelector } from "../../redux/repos";
+import { trackRepo } from "../../api/track-repo";
 
 const RepoDetail = () => {
   const { id = "" } = useParams();
@@ -13,6 +14,10 @@ const RepoDetail = () => {
 
   const repo = useSelector(repoByIdSelector(parsedId));
 
+  const onTrackClick = () => {
+    trackRepo(repo);
+  };
+
   if (!repo) {
     navigate("/");
   }
@@ -20,7 +25,7 @@ const RepoDetail = () => {
   return (
     <div>
       <h5>{repo.name}</h5>
-      <button>Track</button>
+      <button onClick={onTrackClick}>Track</button>
     </div>
   );
 };
