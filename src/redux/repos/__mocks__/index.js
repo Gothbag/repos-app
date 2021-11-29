@@ -1,12 +1,11 @@
 export const state = {
   repos: [
     {
-      id: 1,
-      title: "Cidade de Deus"
-    },
-    {
-      id: 2,
-      title: "A Confederacy of Dunces"
+      id: 1936771,
+      node_id: "MDEwOlJlcG9zaXRvcnkxOTM2Nzcx",
+      name: "truth",
+      full_name: "google/truth",
+      private: false
     }
   ]
 };
